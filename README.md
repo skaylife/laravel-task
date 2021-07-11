@@ -1,3 +1,11 @@
+
+## Команды 
+php artisan make:model Article -fm 
+php artisan make:model Tag -fm 
+php artisan make:model Comment -fm 
+php artisan make:model State -fm 
+php artisan make:migration create_article_tag_table 
+
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
 <p align="center">
