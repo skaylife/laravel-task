@@ -5,8 +5,12 @@
 use App\Tag;
 use Faker\Generator as Faker;
 
-$factory->define(Tag::class, function (Faker $faker) {
-    return [
-        //
-    ];
-});
+class TagFactory extends Factory {
+    protected $model = Tag::class;
+
+    public function definition() {
+        return [
+            'label' => $this->faker->word,
+        ];
+    }
+}
