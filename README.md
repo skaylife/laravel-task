@@ -1,6 +1,7 @@
 
 ## Команды 
-```shphp artisan make:model Article -fm
+```sh
+php artisan make:model Article -fm
 php artisan make:model Tag -fm 
 php artisan make:model Comment -fm 
 php artisan make:model State -fm 
