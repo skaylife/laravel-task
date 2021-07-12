@@ -15,13 +15,21 @@ php artisan make:model Comment -fm
 php artisan make:model State -fm 
 php artisan make:migration create_article_tag_table 
 
+php artisan - Для просмотра доступных команд 
 php artisan migrate
 php artisan db:seed
 php artisan migrate:refresh --seed | Перезапись сидов
 
-composer require barryvdh/laravel-debugbar --dev | Дебаггер, для просмотра ошибок на сайте, и дебага
+// Чтоб отключить пакет -debugbar надо зайты в файл .env, и отключить настройку APP_DEBUG=true - поставить на false
+composer require barryvdh/laravel-debugbar --dev | Дебаггер, для просмотра ошибок на сайте, и дебага 
+
 composer require --dev barryvdh/laravel-ide-helper | Для лучшего взаимодействия проекта, и ide
+php artisan ide-helper:generate | Для генерации файлика, и хелпы для ide 
+
 composer require laravel/ui | Для простого добавления VueJS
+php artisan ui vue | Для генерации scaffolding VUE
+// Установка npm, и пакетов для VueJS
+npm i 
 ```
 
 ## About Laravel
