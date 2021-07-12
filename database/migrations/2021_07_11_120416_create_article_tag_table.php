@@ -15,12 +15,29 @@ class CreateArticleTagTable extends Migration
     {
         Schema::create('article_tag', function (Blueprint $table) {
 //            $table->id();
-//            $table->unsignedBigInteger('article_id');
+
 //            $table->foreign('article_id')->references('id')->on('articles');
 //            $table->unsignedBigInteger('tags_id');
 //            $table->foreign('tags_id')->references('id')->on('tags');
-            $table->foreignId('article_id')->constrained();
-            $table->foreignId('tag_id')->constrained();
+
+//            $table->foreignId('user_id')->constrained();
+
+            $table->unsignedBigInteger('article_id')->unsigned()->index()->nullable();
+            $table->unsignedBigInteger('tag_id')->unsigned()->index()->nullable();
+
+            $table->foreign('article_id')->references('id')->on('articles');
+            $table->foreign('tag_id')->references('id')->on('tags');
+
+
+
+
+
+//            $table->integer('category_id')->unsigned();
+//            $table->foreign('category_id')->references('id')->on('categories');
+
+
+//            $table->foreign('article_id')->constrained();
+//            $table->foreign('tag_id')->constrained();
         });
     }
 
