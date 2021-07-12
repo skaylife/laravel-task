@@ -4,6 +4,8 @@ namespace Database\Factories;
 
 use App\Models\Article;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Str;
+use Carbon\Carbon;
 
 class ArticleFactory extends Factory
 {
@@ -14,13 +16,20 @@ class ArticleFactory extends Factory
      */
     protected $model = Article::class;
 
-    public function definition() {
+    /**
+     * Define the model's default state.
+     *
+     * @return array
+     */
+    public function definition()
+    {
         $title = $this->faker->sentence(6, true);
-        $slug = Str::substr(Str::lower(preg_replace('/\s=+/', '-', $title)), 0, -1);
+        $slug = Str::substr(Str::lower(preg_replace('/\s+/', '-', $title)), 0, -1);
 
-        // $slug = Str - pattern
-        // "hello laravel new project."
-        // "hello-laravel-new-project"
+        // "Hello wold hello wold hello wold."
+        // "hello-wold-hello-wold-hello-wold"
+        // https://laravel.com/docs/8.x/helpers
+
 
         return [
             'title' => $title,
@@ -28,6 +37,11 @@ class ArticleFactory extends Factory
             'slug' => $slug,
             'img' => 'https://coursecouponclub.com/wp-content/uploads/2021/06/4040472_e850_2.jpg',
             'created_at' => $this->faker->dateTimeBetween('-1 years'),
+//            'published_at' => Carbon::now()
         ];
     }
 }
+
+
+
+
