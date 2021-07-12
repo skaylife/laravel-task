@@ -16,6 +16,7 @@ php artisan make:model State -fm
 php artisan make:migration create_article_tag_table 
 
 php artisan migrate
+php artisan db:seed
 ```
 
 ## About Laravel
