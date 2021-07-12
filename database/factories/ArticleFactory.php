@@ -4,7 +4,6 @@
 
 use App\Article;
 use Faker\Generator as Faker;
-use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 
 
@@ -22,7 +21,7 @@ class ArticleFactory extends Factory {
             'body' => $this->faker->paragraph(100, true),
             'slug' => $slug,
             'img' => 'https://coursecouponclub.com/wp-content/uploads/2021/06/4040472_e850_2.jpg',
-            'created_at' => $this->faker-dateTimeBetween('-1 years'),
+            'created_at' => $this->faker->dateTimeBetween('-1 years'),
         ];
     }
 }
