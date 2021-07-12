@@ -38,6 +38,9 @@ npm uninstall bootstrap jquery // Удалине - Бутстрапа, и Jquery
 // Установка bootstrap 5.0 и иконок
 npm install bootstrap
 npm i bootstrap-icons
+
+//Подключение шрифтов 
+npm install --save @fortawesome/fontawesome-free
 ```
 
 ## About Laravel
