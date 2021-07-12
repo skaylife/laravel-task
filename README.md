@@ -34,6 +34,10 @@ npm i
 
 npm -h // посмотреть какие команды доступны
 npm uninstall bootstrap jquery // Удалине - Бутстрапа, и Jquery
+
+// Установка bootstrap 5.0 и иконок
+npm install bootstrap
+npm i bootstrap-icons
 ```
 
 ## About Laravel
