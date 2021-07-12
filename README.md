@@ -27,9 +27,13 @@ composer require --dev barryvdh/laravel-ide-helper | Для лучшего вз�
 php artisan ide-helper:generate | Для генерации файлика, и хелпы для ide 
 
 composer require laravel/ui | Для простого добавления VueJS
-php artisan ui vue | Для генерации scaffolding VUE
+php artisan ui vue | Для генерации scaffolding 
+
 // Установка npm, и пакетов для VueJS
 npm i 
+
+npm -h // посмотреть какие команды доступны
+npm uninstall bootstrap jquery // Удалине - Бутстрапа, и Jquery
 ```
 
 ## About Laravel
