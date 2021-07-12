@@ -41,6 +41,9 @@ npm i bootstrap-icons
 
 //Подключение шрифтов 
 npm install --save @fortawesome/fontawesome-free
+
+// Установка библиотеки VueEX
+npm install vuex --save
 ```
 
 ## About Laravel
