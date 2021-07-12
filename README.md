@@ -17,6 +17,7 @@ php artisan make:migration create_article_tag_table
 
 php artisan migrate
 php artisan db:seed
+php artisan migrate:refresh --seed | Перезапись сидов
 ```
 
 ## About Laravel
